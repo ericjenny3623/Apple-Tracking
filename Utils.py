@@ -422,6 +422,7 @@ def obtain_3d_volume(disparity_map,left_image , points_2D,only_fruit=True,point_
         end_header
         '''
 
+        os.makedirs(os.path.dirname(file_name), exist_ok=True)
         with open(file_name, 'wb') as f:     #opening file to make a ply file
 
             f.write((header % dict(vert_num=len(verts))).encode('utf-8'))

@@ -20,3 +20,4 @@ deep_sort (copy)
 *.jpg
 __pycache__
 
+*.zip
